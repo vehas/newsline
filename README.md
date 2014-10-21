@@ -1,4 +1,4 @@
 newsline
 ========
 
-first prototype of the newlines project
+viewpage at http://vehas.github.io/newsline
