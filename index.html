@@ -118,6 +118,18 @@
                 });
                 $(this).removeClass("hide");
             });
+            $.ajax({
+        url: "hk.json",
+        dataType: "json",
+        success: function(data) {
+            console.log(data);
+            $('body').append(data.news[0].date);
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+            console.log('ERROR', textStatus, errorThrown);
+        }
+    });
+            
         </script>
 
 
